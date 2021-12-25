@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main>
+  <div class="caption">
+    <h3>ARTICLE</h3>
+  </div>
+  <article>
+    <h2>{{ page.title }}</h2>
+    <hr/>
+    {% include icons/calendar.svg %}
+    <span>{{ page.date | date: "%b %d, %Y" }}</span>
+    {{ content }}
+  </article>
+  {% include nav.html %}
+</main>

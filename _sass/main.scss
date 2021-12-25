@@ -1,0 +1,148 @@
+@import "style";
+
+$bgImage: "../images/oiFEo2D87iM-unsplash.jpg";
+
+// font awesome icons
+.fa-github {
+  width: 31px; // 496
+  height: 32px; // 512
+}
+.fa-twitter-square {
+  width: 28px; // 448
+  height: 32px; // 512
+}
+.fa-pinterest {
+  width: 31px; // 496
+  height: 32px; // 512
+}
+// heroicons
+.h-5, .w-5 {
+  height: 20px;
+  width: 20px;
+  padding-top: 2px;
+  color: $purple;
+}
+
+article {
+  .h-5, .w-5, span {
+    padding: 0;
+    vertical-align: middle;
+  }
+  span {
+    font-weight: 600;
+  }
+  hr {
+    background: $gray;
+  }
+}
+
+header {
+  height: 100%;
+  // background: $purple;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), 
+    url($bgImage);
+  .header-items {
+    margin-left: 8rem;
+    color: $backgroundColor;
+    h1 {
+      margin: 0 0 $spacing-4 0;
+      padding-top: 4rem;
+      font-size: $fontSize-8;
+      color: currentColor;
+    }
+    h2 {
+      margin: 0 0 $spacing-3 0;
+      font-weight: 400;
+      color: currentColor;
+    }
+    .header-icons {
+      padding-bottom: 4rem;
+      a {
+        margin-right: $spacing-1;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+main, footer {
+  margin: 0 8rem;
+  max-width: 42rem;
+}
+
+main {
+  .caption {
+    h3 {
+      margin-top: $spacing-4;
+      margin-bottom: $spacing-3;
+    }
+  }
+}
+
+aside {
+  h3 {
+    margin-top: $spacing-2;
+    margin-bottom: $spacing-2;
+  }
+  .post-items {
+    display: flex;
+    justify-content: left;
+    .month {
+      width: 2.625rem;
+      white-space: nowrap;
+    }
+    .date-year {
+      width: 4.125rem;
+      white-space: nowrap;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+footer > hr {
+  margin-top: $spacing-4;
+}
+
+.nav-items, .footer-items {
+  margin: $spacing-2 0;
+  display: flex;
+  a {
+    text-decoration: none;
+  }
+  .blank {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 40rem) {
+
+  header {
+    .header-items {
+      margin: 0 $spacing-1;
+      h1 {
+        padding-top: 3rem;
+      }
+      h2 {
+        font-size: $fontSize-3;
+      }
+      .header-icons {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  main, footer {
+    margin: 0;
+    padding: 0 $spacing-1;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}

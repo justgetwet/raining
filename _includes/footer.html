@@ -1,0 +1,11 @@
+<footer>
+  <hr/>
+  <div class="footer-items">
+    <div to me>&copy; {{ site.author }} Powered by Jekyll</div>
+    <div class="blank"></div>
+    {% if page.layout == "post" %}
+      <a href="{{ page.url | relative_url }}" title="Page Top">TOP</a>
+      <div>{% include icons/arrow-small-up.svg %}</div>
+    {% endif %}
+  </div>
+</footer>

@@ -1,0 +1,21 @@
+<header>
+  <div class="header-items">
+    <h1>
+      <a href="{{ "/" | relative_url }}" title="Home">
+        {{ site.title }}
+      </a>
+    </h1>
+    <h2>{{ site.description }}</h2>
+    <div class="header-icons">
+      <a href="{{ site.github }}" title="Github">
+        {% include icons/github-brands.svg %}
+      </a>
+      <a href="{{ site.pinterest }}" title="Pinterest">
+        {% include icons/pinterest-brands.svg %}
+      </a>
+      <a href="{{ site.twitter }}" title="Twitter">
+        {% include icons/twitter-square-brands.svg %}
+      </a>
+    </div>
+  </div>
+</header>
